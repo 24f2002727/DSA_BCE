@@ -21,12 +21,12 @@ int partition(int arr[], int left, int right) {
     return i + 1;
 }
 
-void quickSort(int arr[], int low, int high) {
+void quickSort(int arr[], int left, int right) {
     if (left < right)  //it is checking the condn for elem in the list>1
     {
-        int pi = partition(arr, low, high);
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
+        int pi = partition(arr, left, right);
+        quickSort(arr, left, pi - 1);
+        quickSort(arr, pi + 1, right);
     }
 }
 

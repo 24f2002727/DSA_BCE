@@ -15,7 +15,7 @@ void main()
     }
     else
     {
-        printf("\nThe following moves are required for N=%d\n",n);
+        printf("\nThe follefting moves are required for N=%d\n",n);
         tower(n,"beg","aux","end");
     }
     return;
